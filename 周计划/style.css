@@ -1,0 +1,163 @@
+/* General Styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+/* Emojis for better visual cues */
+.emoji {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+/* Intro and Legend */
+.intro p, .legend ul, .reminders ul {
+    margin-bottom: 10px;
+}
+.legend ul, .reminders ul {
+    list-style: none;
+    padding-left: 0;
+}
+.legend li, .reminders li {
+    margin-bottom: 8px;
+}
+
+/* Schedule Day Styling */
+.schedule .day {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+.schedule .day:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.schedule .day header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.schedule .day header h2 {
+    margin: 0;
+    border: none;
+    padding: 0;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+}
+.schedule .day header .activity-icon {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.workout-day { border-left: 5px solid #3498db; } /* Blue for workout */
+.run-day { border-left: 5px solid #2ecc71; }     /* Green for run */
+.rest-day { border-left: 5px solid #f39c12; }    /* Orange for rest */
+
+/* Details/Summary for Collapsible Sections */
+details {
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #3498db;
+    outline: none; /* Remove default focus outline */
+    display: flex;
+    align-items: center;
+}
+summary::marker { /* Style default dropdown marker */
+   color: #3498db;
+}
+/* Or hide default marker and use custom one */
+/*
+summary { list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: '▶ '; margin-right: 5px; }
+details[open] summary::before { content: '▼ '; }
+*/
+
+details ul {
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+details li {
+    margin-bottom: 8px;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+    vertical-align: middle; /* Align checkbox with text */
+    width: 16px;
+    height: 16px;
+}
+
+/* Style completed tasks */
+input[type="checkbox"]:checked + span,
+label:has(input[type="checkbox"]:checked) {
+    text-decoration: line-through;
+    color: #7f8c8d;
+}
+/* Specific label styling for day headers */
+.completion-label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.completion-label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    .container { padding: 15px; }
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1.2em; }
+    .schedule .day header { flex-direction: column; align-items: flex-start; }
+    .schedule .day header h2 { margin-bottom: 5px;}
+    .completion-label { margin-top: 5px;}
+}

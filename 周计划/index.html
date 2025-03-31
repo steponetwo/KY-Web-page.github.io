@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周度功能性训练计划</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>周度功能性训练计划 <span class="emoji">📅</span></h1>
+
+        <div class="intro">
+            <p><strong>目标:</strong> 📉 减脂 | 💪 改善体态 | 🏃‍♀️ 提高跑步成绩</p>
+            <p><strong>级别:</strong> ⭐⭐ 中级</p>
+            <p><strong>频率:</strong> 🏋️ 3次功能性训练 (健身房) + 🏃 2次跑步 / 周</p>
+        </div>
+
+        <div class="legend">
+            <h2><span class="emoji">💡</span> 图标说明 (Legend):</h2>
+            <ul>
+                <li><span class="emoji">🏋️</span> = 功能性/力量训练</li>
+                <li><span class="emoji">🏃</span> = 跑步</li>
+                <li><span class="emoji">🛌 / 🧘</span> = 休息 / 积极恢复</li>
+                <li><span class="emoji">🔥</span> = 热身</li>
+                <li><span class="emoji">💪</span> = 主要训练</li>
+                <li><span class="emoji">🧎</span> = 整理放松</li>
+                <li><span class="emoji">🏋️‍♀️</span> = 主要力量动作</li>
+                <li><span class="emoji">🚶‍♀️/🚶</span> = 弓步/行走/负重行走类</li>
+                <li><span class="emoji">🎯</span> = 核心训练动作</li>
+                <li><span class="emoji">🤸‍♀️</span> = 灵活性/激活类动作</li>
+                <li><span class="emoji">⏱️</span> = 时间/次数/距离</li>
+                <li><span class="emoji">#️⃣</span> = 组数</li>
+                <li><input type="checkbox" checked disabled> = 标记完成</li>
+            </ul>
+        </div>
+
+        <div class="schedule">
+            <h2><span class="emoji">🗓️</span> 本周计划</h2>
+
+            <div class="day workout-day">
+                <header>
+                    <h2>周一 (Mon) <span class="activity-icon">🏋️</span></h2>
+                    <label class="completion-label"><input type="checkbox" id="mon-workout"> 功能性训练 1 (力量与推力)</label>
+                </header>
+                <p><strong>时长:</strong> ⏱️ 45-60 min</p>
+                <details>
+                    <summary>🔥 热身 (5-10 min)</summary>
+                    <ul>
+                        <li><span class="emoji">🤸‍♀️</span> 动态拉伸 + 关节活动</li>
+                        <li><span class="emoji">🤸‍♀️</span> 激活: 臀桥 (#️⃣ 2组 x ⏱️ 15次), 弹力带侧步走 (#️⃣ 2组 x ⏱️ 10步/方向)</li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>💪 主要训练 (35-45 min)</summary>
+                    <ul>
+                        <li><label><input type="checkbox" id="mon-ex1"> <span class="emoji">🏋️‍♀️</span> 杠铃/哑铃深蹲 - #️⃣ 3组 x ⏱️ 8-10次</label></li>
+                        <li><label><input type="checkbox" id="mon-ex2"> <span class="emoji">🏋️‍♀️</span> 哑铃卧推 - #️⃣ 3组 x ⏱️ 10-12次</label></li>
+                        <li><label><input type="checkbox" id="mon-ex3"> <span class="emoji">🏋️‍♀️</span> 罗马尼亚硬拉 (RDL) - #️⃣ 3组 x ⏱️ 10-12次</label></li>
+                        <li><label><input type="checkbox" id="mon-ex4"> <span class="emoji">🏋️‍♀️</span> TRX划船 / 坐姿划船 - #️⃣ 3组 x ⏱️ 12-15次</label></li>
+                        <li><label><input type="checkbox" id="mon-ex5"> <span class="emoji">🚶‍♀️</span> 农夫行走 - #️⃣ 3组 x ⏱️ 30-40米</label></li>
+                        <li><label><input type="checkbox" id="mon-ex6"> <span class="emoji">🎯</span> 平板支撑 - #️⃣ 3组 x ⏱️ 45-60秒</label></li>
+                    </ul>
+                </details>
+                 <details>
+                    <summary><span class="emoji">🧎</span> 整理放松 (5 min)</summary>
+                    <ul>
+                        <li><span class="emoji">🧘</span> 静态拉伸 (股四头肌, 腘绳肌, 胸, 背)</li>
+                    </ul>
+                </details>
+            </div>
+
+            <div class="day run-day">
+                 <header>
+                    <h2>周二 (Tue) <span class="activity-icon">🏃</span></h2>
+                     <label class="completion-label"><input type="checkbox" id="tue-run"> 跑步日 1</label>
+                </header>
+                <p>轻松跑 或 间歇跑 (⏱️ 根据你的跑步计划)</p>
+            </div>
+
+            <div class="day workout-day">
+                 <header>
+                    <h2>周三 (Wed) <span class="activity-icon">🏋️</span></h2>
+                     <label class="completion-label"><input type="checkbox" id="wed-workout"> 功能性训练 2 (单腿/铰链与拉力)</label>
+                </header>
+                 <p><strong>时长:</strong> ⏱️ 45-60 min</p>
+                 <details>
+                    <summary>🔥 热身 (5-10 min)</summary>
+                     <ul>
+                        <li><span class="emoji">🤸‍♀️</span> 动态拉伸 + 关节活动</li>
+                        <li><span class="emoji">🤸‍♀️</span> 激活: 单腿臀桥 (#️⃣ 2组 x ⏱️ 10-12次/腿), 鸟狗式 (#️⃣ 2组 x ⏱️ 10次/侧)</li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>💪 主要训练 (35-45 min)</summary>
+                    <ul>
+                        <li><label><input type="checkbox" id="wed-ex1"> <span class="emoji">🚶‍♀️</span> 保加利亚分腿蹲 - #️⃣ 3组 x ⏱️ 10-12次/腿</label></li>
+                        <li><label><input type="checkbox" id="wed-ex2"> <span class="emoji">🏋️‍♀️</span> 引体向上 / 高位下拉 - #️⃣ 3组 x ⏱️ 8-12次</label></li>
+                        <li><label><input type="checkbox" id="wed-ex3"> <span class="emoji">🏋️‍♀️</span> 壶铃摇摆 - #️⃣ 3组 x ⏱️ 15-20次</label></li>
+                        <li><label><input type="checkbox" id="wed-ex4"> <span class="emoji">🏋️‍♀️</span> 哑铃过头推举 - #️⃣ 3组 x ⏱️ 10-12次</label></li>
+                        <li><label><input type="checkbox" id="wed-ex5"> <span class="emoji">🚶‍♀️</span> 单腿 RDL - #️⃣ 3组 x ⏱️ 8-10次/腿</label></li>
+                        <li><label><input type="checkbox" id="wed-ex6"> <span class="emoji">🎯</span> 帕洛夫推举 - #️⃣ 3组 x ⏱️ 10-12次/侧</label></li>
+                    </ul>
+                </details>
+                 <details>
+                    <summary><span class="emoji">🧎</span> 整理放松 (5 min)</summary>
+                    <ul>
+                        <li><span class="emoji">🧘</span> 静态拉伸 (臀部, 髋屈肌, 背阔肌, 肩部)</li>
+                    </ul>
+                </details>
+            </div>
+
+            <div class="day run-day">
+                 <header>
+                    <h2>周四 (Thu) <span class="activity-icon">🏃</span></h2>
+                     <label class="completion-label"><input type="checkbox" id="thu-run"> 跑步日 2</label>
+                </header>
+                <p>长距离跑 或 节奏跑 (⏱️ 根据你的跑步计划)</p>
+            </div>
+
+            <div class="day workout-day">
+                 <header>
+                    <h2>周五 (Fri) <span class="activity-icon">🏋️</span></h2>
+                    <label class="completion-label"><input type="checkbox" id="fri-workout"> 功能性训练 3 (核心/稳定与整合)</label>
+                </header>
+                 <p><strong>时长:</strong> ⏱️ 40-50 min</p>
+                 <details>
+                    <summary>🔥 热身 (5-10 min)</summary>
+                     <ul>
+                         <li><span class="emoji">🤸‍♀️</span> 动态拉伸 + 关节活动</li>
+                         <li><span class="emoji">🤸‍♀️</span> 激活: 死虫式 (#️⃣ 2组 x ⏱️ 10-12次/侧), 侧平板抬腿 (#️⃣ 2组 x ⏱️ 8-10次/侧)</li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>💪 主要训练 (30-40 min - 循环3-4轮)</summary>
+                     <ul>
+                        <li><label><input type="checkbox" id="fri-ex1"> <span class="emoji">🏋️‍♀️</span> 高脚杯深蹲 - ⏱️ 10-12次</label></li>
+                        <li><label><input type="checkbox" id="fri-ex2"> <span class="emoji">🏋️‍♀️</span> 俯卧撑 - ⏱️ 8-15次</label></li>
+                        <li><label><input type="checkbox" id="fri-ex3"> <span class="emoji">🚶‍♀️</span> 行走箭步蹲 - ⏱️ 10-12步/腿</label></li>
+                        <li><label><input type="checkbox" id="fri-ex4"> <span class="emoji">🏋️‍♀️</span> 弹力带面拉 - ⏱️ 15-20次</label></li>
+                        <li><label><input type="checkbox" id="fri-ex5"> <span class="emoji">🎯</span> 俄罗斯转体 - ⏱️ 15-20次/侧</label></li>
+                        <li><label><input type="checkbox" id="fri-ex6"> <span class="emoji">🚶‍♀️</span> 手提箱行走 - ⏱️ 20-30米/侧</label></li>
+                        <li>*轮间休息 60-90秒*</li>
+                    </ul>
+                </details>
+                 <details>
+                    <summary><span class="emoji">🧎</span> 整理放松 (5 min)</summary>
+                    <ul>
+                         <li><span class="emoji">🧘</span> 全身拉伸 或 泡沫轴放松</li>
+                    </ul>
+                </details>
+            </div>
+
+            <div class="day rest-day">
+                 <header>
+                    <h2>周六 (Sat) <span class="activity-icon">🛌 / 🧘</span></h2>
+                    <label class="completion-label"><input type="checkbox" id="sat-rest"> 休息 / 积极恢复</label>
+                </header>
+                <p>休息 或 积极恢复 (如: 散步, 轻度拉伸, 瑜伽)</p>
+            </div>
+
+            <div class="day rest-day">
+                 <header>
+                    <h2>周日 (Sun) <span class="activity-icon">🛌</span></h2>
+                    <label class="completion-label"><input type="checkbox" id="sun-rest"> 休息</label>
+                </header>
+                <p>完全休息</p>
+             </div>
+        </div>
+
+        <div class="reminders">
+            <h2><span class="emoji">💡</span> 关键提示 (Key Reminders):</h2>
+            <ul>
+                <li>✅ <strong>姿势优先:</strong> 动作做标准比重量/次数更重要。</li>
+                <li>📈 <strong>循序渐进:</strong> 逐渐增加难度 (重量/次数/组数/休息时间)。</li>
+                <li><span class="emoji">👂</span> <strong>倾听身体:</strong> 注意疲劳和疼痛信号，适时调整。</li>
+                <li><span class="emoji">🍽️</span> <strong>营养与睡眠:</strong> 保证充足的休息和均衡的饮食以支持恢复和目标达成。</li>
+                <li><span class="emoji">🔄</span> <strong>灵活调整:</strong> 这只是模板，根据你的感受进行微调。</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
